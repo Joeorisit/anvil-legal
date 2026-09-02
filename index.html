@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anvil Privacy Policy</title>
+<meta name="description" content="What Anvil collects, who sees it, and how long it is kept.">
+<style>
+  :root { color-scheme: light }
+  * { box-sizing: border-box }
+  body {
+    margin: 0;
+    background: #E6DFD3;
+    color: #201E19;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+  }
+  h1 {
+    font-family: Playfair Display, Georgia, "Times New Roman", serif;
+    font-size: 2.1rem;
+    line-height: 1.15;
+    margin: 0 0 24px;
+  }
+  h2 {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8A8271;
+    margin: 40px 0 8px;
+  }
+  p { margin: 0 0 16px }
+  strong { color: #7C6343; font-weight: 600 }
+  a { color: #7C6343 }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #D9D0BE;
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8A8271;
+  }
+  @media (max-width: 30rem) {
+    main { padding: 24px 16px 40px }
+    h1 { font-size: 1.7rem }
+  }
+  ::selection { background: #CEC8B8 }
+  main { border-radius: 22px }
+</style>
+</head>
+<body>
+<main>
+<h1>Anvil Privacy Policy</h1>
+<p><strong>Effective:</strong> 1 September 2026 · <strong>Contact:</strong> <a href="mailto:support@anvil.dev">support@anvil.dev</a></p>
+<p>Anvil is accountability with proof, among a small circle of friends. You commit to showing up somewhere, and a check-in is a photo you take in the app while you are physically at that place. Everything below follows from that: Anvil collects what it needs to show your circle that you were there, and nothing else.</p>
+<h2>What Anvil collects, and how</h2>
+<p><strong>Your location.</strong> Precise location, in three situations: when you add a place (to record where it is), when you open Anvil at one of your places (to confirm you are there), and — only if you grant background location — when your phone notices you arriving at one of your places, so Anvil can remind you to take your photo. Anvil stores the coordinates of the places you create and the fact of your arrivals. It does not record your location at any other time, and it does not build a history of where you go.</p>
+<p><strong>Your check-in photos.</strong> Taken with the camera inside Anvil. <strong>Anvil never reads your photo library</strong> — there is no image picker, and Anvil does not request photo library access at all. You can verify this in your device&#39;s Settings. Location metadata is stripped from the file on upload.</p>
+<p><strong>Your account.</strong> Anvil uses Sign in with Apple. Anvil receives an account identifier and, depending on your choice, an email address — which may be Apple&#39;s private relay address rather than your real one. You choose a display name.</p>
+<p><strong>Diagnostics.</strong> Crash and performance data via Sentry, to find bugs. This is never used to decide anything about you, your check-ins, or what you or your circle are shown.</p>
+<p>Anvil does not use advertising identifiers, does not track you across other apps or websites, and shows no ads.</p>
+<h2>Who sees it</h2>
+<p><strong>Your circle sees your check-in photos, the names of the places you check in at, and whether you met your commitments.</strong> That is the product.</p>
+<p><strong>Your circle never sees your location.</strong> Not coordinates, not a map, not the place&#39;s position — only its name and your photo. Your circle is also never told what location permission you have granted.</p>
+<p><strong>Anvil does not sell your location, your attendance, or any other data, to anyone, ever.</strong> This is a permanent commitment, not a current practice.</p>
+<p>Data is stored with Supabase, which hosts Anvil&#39;s database and photo storage, and Sentry, which receives diagnostics. Both are bound to protect your data to the same standard set out in this policy. No one else receives it.</p>
+<h2>How long it is kept</h2>
+<p><strong>Check-in photos are deleted 90 days after they are taken.</strong> The record that you checked in is kept, so your history, streaks and totals stay intact — the image simply stops being shown.</p>
+<p>Records of your arrivals, check-ins, misses and commitments are kept while your account exists.</p>
+<h2>Deleting your account, and withdrawing consent</h2>
+<p><strong>You can delete your account from inside Anvil, in Settings.</strong> When you do, your photos are erased and your account is gone. What your circles saw happen is not rewritten: the check-ins and misses they were shown stay in their history, no longer attached to you and no longer carrying your name. Nothing of yours remains attached to you, and there is no way back — a returning person is a new member, with new streaks.</p>
+<p>You can withdraw location or camera permission at any time in your device&#39;s Settings. Anvil keeps working: without camera or location access you can still read your circles, but you cannot make check-ins, because a check-in is a photo taken at a place. Anvil will not create misses for commitments it cannot observe.</p>
+<p>To ask about data Anvil holds about you, or to request its deletion by hand, email <a href="mailto:support@anvil.dev.">support@anvil.dev.</a></p>
+<h2>Reporting content</h2>
+<p>Any photo in a feed can be reported from inside the app. Reported photos are hidden from you immediately and reviewed. Photos are also checked on your device before they are posted, using Apple&#39;s on-device sensitive content analysis — that check happens on your phone and the photo is not sent anywhere for it.</p>
+<h2>Children</h2>
+<p>Anvil is not directed at children under 13 and does not knowingly collect their data.</p>
+<h2>Changes</h2>
+<p>Material changes to this policy will be announced in the app before they take effect. The full history of this document is public, in the repository this page is published from.</p>
+<footer>These are the same words Anvil shows in Settings, in full, inside the app.</footer>
+</main>
+</body>
+</html>
