@@ -1,6 +1,6 @@
 # Anvil Privacy Policy
 
-**Effective:** 1 September 2026 · **Contact:** support@anvil.dev
+**Effective:** 1 September 2026 · **Contact:** feedback@arlisai.com
 
 Anvil is accountability with proof, among a small circle of friends. You commit to showing up somewhere, and a check-in is a photo you take in the app while you are physically at that place. Everything below follows from that: Anvil collects what it needs to show your circle that you were there, and nothing else.
 
@@ -38,7 +38,7 @@ Records of your arrivals, check-ins, misses and commitments are kept while your 
 
 You can withdraw location or camera permission at any time in your device's Settings. Anvil keeps working: without camera or location access you can still read your circles, but you cannot make check-ins, because a check-in is a photo taken at a place. Anvil will not create misses for commitments it cannot observe.
 
-To ask about data Anvil holds about you, or to request its deletion by hand, email support@anvil.dev.
+To ask about data Anvil holds about you, or to request its deletion by hand, email feedback@arlisai.com.
 
 ## Reporting content
 
