@@ -36,6 +36,16 @@
     margin: 40px 0 8px;
   }
   p { margin: 0 0 16px }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 0.9rem }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid #83796B }
+  th {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #83796B;
+    font-weight: normal;
+  }
   strong { color: #A2855B; font-weight: 600 }
   a { color: #A2855B }
   footer {
@@ -59,30 +69,65 @@
 <body>
 <main>
 <h1>Anvil Privacy Policy</h1>
-<p><strong>Effective:</strong> 1 September 2026 · <strong>Contact:</strong> <a href="mailto:feedback@arlisai.com">feedback@arlisai.com</a></p>
-<p>Anvil is accountability with proof, among a small circle of friends. You commit to showing up somewhere, and a check-in is a photo you take in the app while you are physically at that place. Everything below follows from that: Anvil collects what it needs to show your circle that you were there, and nothing else.</p>
+<p><strong>Effective:</strong> 1 December 2026 · <strong>Contact:</strong> <a href="mailto:feedback@arlisai.com">feedback@arlisai.com</a></p>
+<p>Anvil is accountability with proof, among a small circle of friends. You promise to show up somewhere, and a check-in is a Live photo you take in the app while you are physically at that place. Everything below follows from that: Anvil collects what it needs to show your circle that you were there, and nothing else.</p>
+<p>This version replaces the one effective 1 September 2026, and was announced in the app before it took effect. The biggest change: <strong>Live photos are no longer deleted after 90 days.</strong></p>
 <h2>What Anvil collects, and how</h2>
 <p><strong>Your location.</strong> Precise location, in three situations: when you add a place (to record where it is), when you open Anvil at one of your places (to confirm you are there), and — only if you grant background location — when your phone notices you arriving at one of your places, so Anvil can remind you to take your photo. Anvil stores the coordinates of the places you create and the fact of your arrivals. It does not record your location at any other time, and it does not build a history of where you go.</p>
-<p><strong>Your check-in photos.</strong> Taken with the camera inside Anvil. <strong>Anvil never reads your photo library</strong> — there is no image picker, and Anvil does not request photo library access at all. You can verify this in your device&#39;s Settings. Location metadata is stripped from the file on upload.</p>
-<p><strong>Your account.</strong> Anvil uses Sign in with Apple. Anvil receives an account identifier and, depending on your choice, an email address — which may be Apple&#39;s private relay address rather than your real one. You choose a display name.</p>
+<p><strong>Your Live photos.</strong> A check-in is a Live photo: a muted clip of up to three seconds and a still made from it, taken with the camera inside Anvil. <strong>No sound is recorded</strong> — Anvil never asks for the microphone. <strong>Location is removed from the file</strong> on your phone, before it is sent. <strong>Anvil never reads your photo library</strong> — there is no image picker, and Anvil cannot see your photos. It can only add a Share card you choose to save.</p>
+<p><strong>Your Avatar.</strong> Optional. If you take one, it is a photo taken with Anvil&#39;s camera, checked on your phone like a Live photo, and shown to your circles beside your name. You can remove it at any time, and you are shown as your initials again.</p>
+<p><strong>A Run&#39;s numbers.</strong> A Run is proved by its numbers rather than a photo: its distance, its duration, and its shape measured in metres from its own start and turned so it faces no direction. The points it is worked out from stay on your phone and are deleted when you finish. Nothing about where the run went is sent.</p>
+<p><strong>Your account.</strong> Anvil uses Sign in with Apple, and asks Apple for your name only — <strong>never your email address</strong>. Anvil receives an account identifier from Apple. You choose the first and last name your circle sees, and you can write a short intro.</p>
+<p><strong>What you write.</strong> Your intro, the &quot;why&quot; you give a promise, a note on a Check back in, and a circle&#39;s name. Each is checked on your phone against a published word list before it is saved.</p>
+<p><strong>Your birthday stays on your phone.</strong> When you create an account, Anvil asks for the month and year you were born. It is checked on your phone and never sent. If it says you are under 13, your phone keeps it, so that it goes on refusing, and keeps it nowhere else.</p>
+<p><strong>Age signals.</strong> On iOS 26 and later, Anvil asks Apple whether you are under 13, 16 or 18. Whatever Apple shares is used only to apply Anvil&#39;s age rules, on your phone, and is not kept or sent anywhere.</p>
 <p><strong>Diagnostics.</strong> Crash and performance data via Sentry, to find bugs. This is never used to decide anything about you, your check-ins, or what you or your circle are shown.</p>
 <p>Anvil does not use advertising identifiers, does not track you across other apps or websites, and shows no ads.</p>
 <h2>Who sees it</h2>
-<p><strong>Your circle sees your check-in photos, the names of the places you check in at, and whether you met your commitments.</strong> That is the product.</p>
+<p><strong>Your circle sees your Live photos, your Avatar, your name and intro, the names of the places you check in at, your promises, and whether you kept them.</strong> That is the product. For a Run, it sees the numbers, and the shape for three days.</p>
 <p><strong>Your circle never sees your location.</strong> Not coordinates, not a map, not the place&#39;s position — only its name and your photo. Your circle is also never told what location permission you have granted.</p>
+<p><strong>Only you can make a Share card of your photo.</strong> A Share card is made on your phone, of your own Live photo, and saved to your photos or shared only if you choose to. What you post outside Anvil is beyond Anvil&#39;s reach: no leaving, deletion, Report or Block can take it back.</p>
 <p><strong>Anvil does not sell your location, your attendance, or any other data, to anyone, ever.</strong> This is a permanent commitment, not a current practice.</p>
-<p>Data is stored with Supabase, which hosts Anvil&#39;s database and photo storage, and Sentry, which receives diagnostics. Both are bound to protect your data to the same standard set out in this policy. No one else receives it.</p>
+<p>Data is stored with Supabase, which hosts Anvil&#39;s database and photo storage. Sentry receives diagnostics. Expo and Apple carry notifications to your phone. Resend carries the email a Report sends to the developer. Each is bound to protect your data to the same standard set out in this policy. No one else receives it.</p>
 <h2>How long it is kept</h2>
-<p><strong>Check-in photos are deleted 90 days after they are taken.</strong> The record that you checked in is kept, so your history, streaks and totals stay intact — the image simply stops being shown.</p>
-<p>Records of your arrivals, check-ins, misses and commitments are kept while your account exists.</p>
+<p><strong>A Live photo is kept while you are in a circle that saw it.</strong> It has no expiry. When you leave a circle, by any route, your Live photos and Avatar leave it with you; a photo another of your circles saw stays there. Your check-ins stay as lines under your name, so streaks and history stay intact.</p>
+<p><strong>A day&#39;s details are deleted after three days.</strong> Day detail shows your circle the last three days. After that, what only it ever showed — an arrival you did not prove with a photo, and a Run&#39;s shape — is deleted.</p>
+<p><strong>You can remove any of your own photos, at any time.</strong> It is deleted from every circle at once, your circle sees that you removed it, and your check-in still counts. A photo you remove while it is reported is kept, out of sight, for the developer until the Report is decided — at most a day — and then deleted either way.</p>
+<p><strong>A photo removed after a Report is deleted</strong>, not hidden. Its check-in still counts.</p>
+<p><strong>Data is kept longer only when the law requires it.</strong> If a legal matter is anticipated, Anvil may copy what it holds about a member or a circle into a private archive, read by nobody else, and keep it until the matter ends.</p>
+<table>
+<thead><tr><th>What</th><th>How long</th></tr></thead>
+<tbody>
+<tr><td>Your account: your name, intro, Avatar, Apple account identifier, and the version of the Terms you agreed to</td><td>While your account exists</td></tr>
+<tr><td>Your places</td><td>While your account exists. Deleting it erases their coordinates; their names stay with your circle&#39;s history</td></tr>
+<tr><td>Your promises: each promise, its circles, its weekly number, its witnesses and any change to it</td><td>While your account exists. Deleting it erases each &quot;why&quot;; the rest stays with your circle&#39;s history, with no name</td></tr>
+<tr><td>Your check-ins and misses, and a Run&#39;s distance and duration</td><td>Kept as your circle&#39;s history. Deleting your account takes your name off them</td></tr>
+<tr><td>Live photos, the still and the clip</td><td>While you are in a circle that saw them. Deleted when you remove one, leave every circle that saw it, a Report on it is upheld, or you delete your account</td></tr>
+<tr><td>An arrival you did not prove with a photo, and a Run&#39;s shape</td><td>Three days</td></tr>
+<tr><td>Your circles: who is in them, their invite codes and who joined through them, their streaks, and requests to leave or remove someone</td><td>While the circle exists. Deleting your account takes you out of every circle and your name off what stays</td></tr>
+<tr><td>Nudges and Check back in requests, their answers and notes</td><td>Kept as your circle&#39;s history. Deleting your account takes your name off them and erases your notes</td></tr>
+<tr><td>Your phone&#39;s notification token, the notifications decided for you, your mute switches and Heads-up switch, and whether Anvil can see your location at all</td><td>While your account exists. A token moves to whoever signs in next on that phone. A record that a Heads-up went is deleted after two days</td></tr>
+<tr><td>Blocks</td><td>Until either of you deletes your account</td></tr>
+<tr><td>Reports you make, the decision on each, and the notice a removal leaves you</td><td>While your account exists</td></tr>
+<tr><td>The record of each moderation decision</td><td>Kept as Anvil&#39;s record of what it decided. One about an account Ended for age names nobody</td></tr>
+<tr><td>The email a Report sends the developer</td><td>In the developer&#39;s mailbox, and in Resend&#39;s logs for as long as Resend keeps them. Deleted when an account is Ended for age</td></tr>
+<tr><td>An Ended account&#39;s hashed Apple identifier</td><td>Three years from the End. Never kept for an age End</td></tr>
+<tr><td>An Ended account&#39;s images</td><td>Until the next daily sweep, at most a day</td></tr>
+<tr><td>A copy kept because the law requires it</td><td>Until the legal matter ends</td></tr>
+<tr><td>Diagnostics</td><td>Up to 90 days, with Sentry</td></tr>
+<tr><td>On your phone only: your birthday if it was refused, a Run&#39;s points until you finish, photos waiting to upload, and which policy you were last told about</td><td>On your phone, until you delete the app. Never sent</td></tr>
+</tbody>
+</table>
 <h2>Deleting your account, and withdrawing consent</h2>
-<p><strong>You can delete your account from inside Anvil, in Settings.</strong> When you do, your photos are erased and your account is gone. What your circles saw happen is not rewritten: the check-ins and misses they were shown stay in their history, no longer attached to you and no longer carrying your name. Nothing of yours remains attached to you, and there is no way back — a returning person is a new member, with new streaks.</p>
+<p><strong>You can delete your account from inside Anvil, on the Account page.</strong> When you do, Anvil erases your Live photos, your Avatar, your intro, each &quot;why&quot;, each Check back in note, and your places&#39; coordinates, and your account is gone. What your circles saw happen is not rewritten: your check-ins, misses, promises and the names of your places stay in their history, no longer attached to you and no longer carrying your name. Your streaks are kept the same way. Nothing of yours remains attached to you — the one exception is an Ended account&#39;s hash, below — and there is no way back: a returning person is a new member, with new streaks.</p>
 <p>You can withdraw location or camera permission at any time in your device&#39;s Settings. Anvil keeps working: without camera or location access you can still read your circles, but you cannot make check-ins, because a check-in is a photo taken at a place. Anvil will not create misses for commitments it cannot observe.</p>
 <p>To ask about data Anvil holds about you, or to request its deletion by hand, email <a href="mailto:feedback@arlisai.com.">feedback@arlisai.com.</a></p>
-<h2>Reporting content</h2>
-<p>Any photo in a feed can be reported from inside the app. Reported photos are hidden from you immediately and reviewed. Photos are also checked on your device before they are posted, using Apple&#39;s on-device sensitive content analysis — that check happens on your phone and the photo is not sent anywhere for it.</p>
+<h2>Reporting content, and Ended accounts</h2>
+<p>Any Live photo, Avatar, circle name or member can be reported from inside the app. A reported photo is hidden from you at once, and from the circle once a second person reports it. <strong>Every Report is reviewed by a person within 24 hours.</strong> An upheld Report deletes the photo, or clears the words to their default; its poster is told once, privately, and never by whom. Photos are also checked on your phone before they are posted, using Apple&#39;s on-device Sensitive Content Analysis — that check happens on your phone and the photo is not sent anywhere for it.</p>
+<p><strong>An account can be Ended</strong> for serious or repeated abuse, a second upheld copyright notice, or a member being under 13. An Ended account is deleted exactly as above. Unless it was Ended for age, Anvil also keeps a one-way hash of its Sign in with Apple identifier, so the same Apple Account cannot sign up again. The hash is checked at sign-up and used for nothing else, and it is deleted three years from the End. <strong>No hash is ever kept for an account Ended for age.</strong></p>
 <h2>Children</h2>
-<p>Anvil is not directed at children under 13 and does not knowingly collect their data.</p>
+<p>Anvil is for people 13 and older, and does not knowingly collect data from children under 13. When Anvil learns that a member is under 13 — from Apple&#39;s age signal, a Report from someone in their circle, or a parent — it Ends and deletes the account, along with the Report&#39;s email, the email provider&#39;s log of it and its diagnostics, and keeps no hash. A parent asks by writing to <a href="mailto:feedback@arlisai.com">feedback@arlisai.com</a> with the child&#39;s name in Anvil and the circle they are in.</p>
+<p>Any member, of any age, can remove what they posted, at any time: Remove on their own photo, and on their Avatar.</p>
 <h2>Changes</h2>
 <p>Material changes to this policy will be announced in the app before they take effect. The full history of this document is public, in the repository this page is published from.</p>
 <footer>These are the same words Anvil shows in Settings, in full, inside the app.</footer>
