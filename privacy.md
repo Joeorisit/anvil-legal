@@ -14,7 +14,7 @@ This version replaces the one effective 1 September 2026, and was announced in t
 
 **Your Avatar.** Optional. If you take one, it is a photo taken with Anvil's camera, checked on your phone like a Live photo, and shown to your circles beside your name. You can remove it at any time, and you are shown as your initials again.
 
-**A Run's numbers.** A Run is proved by its numbers rather than a photo: its distance, its duration, and its shape measured in metres from its own start and turned so it faces no direction. The points it is worked out from stay on your phone and are deleted when you finish. Nothing about where the run went is sent.
+**A Run's numbers.** A Run is proved by its numbers rather than a photo: its distance and its duration, which make its pace. The points they are worked out from stay on your phone, where they draw your own map, and are deleted when you finish. Nothing about where the run went is sent, and nothing of its shape. A photo you put a Run's numbers on is a Live photo like any other.
 
 **Your account.** Anvil uses Sign in with Apple, and asks Apple for your name only — **never your email address**. Anvil receives an account identifier from Apple. You choose the first and last name your circle sees, and you can write a short intro.
 
@@ -30,7 +30,7 @@ Anvil does not use advertising identifiers, does not track you across other apps
 
 ## Who sees it
 
-**Your circle sees your Live photos, your Avatar, your name and intro, the names of the places you check in at, your promises, and whether you kept them.** That is the product. For a Run, it sees the numbers, and the shape for three days.
+**Your circle sees your Live photos, your Avatar, your name and intro, the names of the places you check in at, your promises, and whether you kept them.** That is the product. For a Run, it sees the distance, the time and the pace, never where it went.
 
 **Your circle never sees your location.** Not coordinates, not a map, not the place's position — only its name and your photo. Your circle is also never told what location permission you have granted.
 
@@ -44,7 +44,7 @@ Data is stored with Supabase, which hosts Anvil's database and photo storage. Se
 
 **A Live photo is kept while you are in a circle that saw it.** It has no expiry. When you leave a circle, by any route, your Live photos and Avatar leave it with you; a photo another of your circles saw stays there. Your check-ins stay as lines under your name, so streaks and history stay intact.
 
-**A day's details clear after three days.** Day detail shows your circle the last three days. After that, a Run's shape is deleted, and an arrival you did not prove with a photo is shown to no one. That arrival is deleted a week after its week ends: until then, a photo you took without signal can still reach it.
+**A day's details clear after three days.** Day detail shows your circle the last three days. After that, an arrival you did not prove with a photo is shown to no one. That arrival is deleted a week after its week ends: until then, a photo you took without signal can still reach it.
 
 **You can remove any of your own photos, at any time.** It is deleted from every circle at once, your circle sees that you removed it, and your check-in still counts. A photo you remove while it is reported is kept, out of sight, for the developer until the Report is decided — at most a day — and then deleted either way.
 
@@ -58,14 +58,13 @@ Data is stored with Supabase, which hosts Anvil's database and photo storage. Se
 | Your places | While your account exists. Deleting it erases their coordinates; their names stay with your circle's history |
 | Your promises: each promise, its circles, its weekly number, its witnesses and any change to it | While your account exists. Deleting it erases each "why"; the rest stays with your circle's history, with no name |
 | Your Private tasks | While your account exists, or until you remove one. Deleting your account erases them |
-| Your check-ins and misses, and a Run's distance and duration | Kept as your circle's history. Deleting your account takes your name off them |
+| Your check-ins, Skips and misses, and a Run's distance and duration | Kept as your circle's history. Deleting your account takes your name off them |
 | Live photos, the still and the clip | While you are in a circle that saw them. Deleted when you remove one, leave every circle that saw it, a Report on it is upheld, or you delete your account |
-| A Run's shape | Three days |
 | An arrival you did not prove with a photo | Shown for three days; deleted a week after its week ends |
 | Your circles: who is in them, their invite codes and who joined through them, their streaks, and requests to leave or remove someone | While the circle exists. Deleting your account takes you out of every circle and your name off what stays |
 | Nudges and Check back in requests, their answers and notes | Kept as your circle's history. Deleting your account takes your name off them and erases your notes |
 | Your phone's notification token, the notifications decided for you, your mute switches and Heads-up switch, and whether Anvil can see your location at all | While your account exists. A token moves to whoever signs in next on that phone. A record that a Heads-up went is deleted after two days |
-| Blocks | Until either of you deletes your account |
+| Blocks | Until you unblock, or either of you deletes your account |
 | Reports you make, the decision on each, and the notice a removal leaves you | While your account exists |
 | The record of each moderation decision | Kept as Anvil's record of what it decided. One about an account Ended for age names nobody |
 | The email a Report sends the developer | In the developer's mailbox, and in Resend's logs for as long as Resend keeps them. Deleted when an account is Ended for age |
@@ -77,7 +76,7 @@ Data is stored with Supabase, which hosts Anvil's database and photo storage. Se
 
 ## Deleting your account, and withdrawing consent
 
-**You can delete your account from inside Anvil, on the Account page.** When you do, Anvil erases your Live photos, your Avatar, your intro, each "why", each Check back in note, your Private tasks, and your places' coordinates, and your account is gone. What your circles saw happen is not rewritten: your check-ins, misses, promises and the names of your places stay in their history, no longer attached to you and no longer carrying your name. Your streaks are kept the same way. Nothing of yours remains attached to you — the one exception is an Ended account's hash, below — and there is no way back: a returning person is a new member, with new streaks.
+**You can delete your account from inside Anvil, on the Account page.** When you do, Anvil erases your Live photos, your Avatar, your intro, each "why", each Check back in note, your Private tasks, and your places' coordinates, and your account is gone. What your circles saw happen is not rewritten: your check-ins, Skips, misses, promises and the names of your places stay in their history, no longer attached to you and no longer carrying your name. Your streaks are kept the same way. Nothing of yours remains attached to you — the one exception is an Ended account's hash, below — and there is no way back: a returning person is a new member, with new streaks.
 
 You can withdraw location or camera permission at any time in your device's Settings. Anvil keeps working: without camera or location access you can still read your circles, but you cannot make check-ins, because a check-in is a photo taken at a place. Anvil will not create misses for commitments it cannot observe.
 
