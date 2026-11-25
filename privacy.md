@@ -16,7 +16,7 @@ This version replaces the one effective 1 September 2026, and was announced in t
 
 **A Run's numbers.** A Run is proved by its numbers rather than a photo: its distance and its duration, which make its pace. The points they are worked out from stay on your phone, where they draw your own map, and are deleted when you finish. Nothing about where the run went is sent, and nothing of its shape. A photo you put a Run's numbers on is a Live photo like any other.
 
-**A Live Session.** A Live Session is proved by Live photos and their moments: a photo when it starts and one when it ends, and when each was. At one of your places, your location is checked once, as it starts, to confirm you are inside the place, and is not kept. A session anywhere sends no location at all. "At home" is only words: Anvil keeps nothing about your home.
+**A Live Session.** A Live Session is proved by Live photos and their moments: a photo when it starts, one for a check around halfway, and one when it ends, and when each was. Anvil picks the check's moment when the session starts, and your phone asks for it with a notification it schedules itself, which is why a Live Session needs notifications on. At one of your places, your location is checked once, as it starts, to confirm you are inside the place, and is not kept. A session anywhere sends no location at all. "At home" is only words: Anvil keeps nothing about your home.
 
 **Your account.** Anvil uses Sign in with Apple, and asks Apple for your name only — **never your email address**. Anvil receives an account identifier from Apple. You choose the first and last name your circle sees.
 
@@ -25,6 +25,8 @@ This version replaces the one effective 1 September 2026, and was announced in t
 **Your birthday stays on your phone.** When you create an account, Anvil asks for the month and year you were born. It is checked on your phone and never sent. If it says you are under 13, your phone keeps it, so that it goes on refusing, and keeps it nowhere else.
 
 **Age signals.** On iOS 26 and later, Anvil asks Apple whether you are under 13, 16 or 18. Whatever Apple shares is used only to apply Anvil's age rules, on your phone, and is not kept or sent anywhere.
+
+**Your calendar stays on your phone.** With Anvil+, and only if you allow it, Anvil reads the calendars on your iPhone to show your events on your own Routine and find your free time. iOS calls this full access; Anvil changes nothing in your calendar. Anvil reads your calendar on your phone and sends none of it anywhere: no event, no title and no busy time is stored or sent, and your circle sees none of it.
 
 **Diagnostics.** Crash and performance data via Sentry, to find bugs. This is never used to decide anything about you, your check-ins, or what you or your circle are shown.
 
@@ -35,6 +37,8 @@ Anvil does not use advertising identifiers, does not track you across other apps
 **Your circle sees your Live photos, your Avatar, your name, the names of the places you check in at, your promises, and whether you kept them.** That is the product. For a Run, it sees the distance, the time and the pace, never where it went. For a Live Session, it sees its photos, how long it ran, and whether it was proved.
 
 **Your circle never sees your location.** Not coordinates, not a map, not the place's position — only its name and your photo. Your circle is also never told what location permission you have granted.
+
+**The Photo mark tells your circle you are on Free.** On Free, your Live photos show a small anvil in the corner, to everyone who sees them and on your Share cards. It follows your plan as each photo is shown, and is drawn over it rather than added to the file. With Anvil+ you can turn it off in Settings.
 
 **Only you can make a Share card of your photo.** A Share card is made on your phone, of your own Live photo, and saved to your photos or shared only if you choose to. What you post outside Anvil is beyond Anvil's reach: no leaving, deletion, Report or Block can take it back.
 
@@ -56,7 +60,7 @@ Data is stored with Supabase, which hosts Anvil's database and photo storage. Se
 
 | What | How long |
 |---|---|
-| Your account: your name, Avatar, Apple account identifier, and the version of the Terms you agreed to | While your account exists |
+| Your account: your name, Avatar, Apple account identifier, the version of the Terms you agreed to, and your Photo mark switch | While your account exists |
 | Your places | While your account exists. Deleting it erases their coordinates; their names stay with your circle's history |
 | Your promises: each promise, its circles, its weekly number, its witnesses and any change to it | While your account exists. Deleting it erases each "why"; the rest stays with your circle's history, with no name |
 | Your Private tasks | While your account exists, or until you remove one. Deleting your account erases them |
@@ -78,7 +82,9 @@ Data is stored with Supabase, which hosts Anvil's database and photo storage. Se
 
 ## Deleting your account, and withdrawing consent
 
-**You can delete your account from inside Anvil, on the Account page.** When you do, Anvil erases your Live photos, your Avatar, each "why", each Check back in note, your Private tasks, and your places' coordinates, and your account is gone. What your circles saw happen is not rewritten: your check-ins, Skips, misses, promises and the names of your places stay in their history, no longer attached to you and no longer carrying your name. Your streaks are kept the same way. Nothing of yours remains attached to you — the one exception is an Ended account's hash, below — and there is no way back: a returning person is a new member, with new streaks.
+**You can delete your account from inside Anvil, in Settings.** When you do, Anvil erases your Live photos, your Avatar, each "why", each Check back in note, your Private tasks, and your places' coordinates, and your account is gone. What your circles saw happen is not rewritten: your check-ins, Skips, misses, promises and the names of your places stay in their history, no longer attached to you and no longer carrying your name. Your streaks are kept the same way. Nothing of yours remains attached to you — the one exception is an Ended account's hash, below — and there is no way back: a returning person is a new member, with new streaks.
+
+**Deleting also asks Apple to let Anvil go.** Apple's sign-in sheet opens once more, and what it returns is used, at that moment, to stop Sign in with Apple for Anvil; Anvil keeps no Apple token, then or ever. If you cancel Apple's sheet, your account is deleted all the same, and you can remove Anvil yourself in your iPhone's Settings: your name, then Sign-In & Security, then Sign in with Apple. An Anvil+ subscription is billed by Apple until you cancel it in Subscriptions; deleting your account does not cancel it.
 
 You can withdraw location or camera permission at any time in your device's Settings. Anvil keeps working: without camera or location access you can still read your circles, but you cannot make check-ins, because a check-in is a photo taken at a place. Anvil will not create misses for commitments it cannot observe.
 
