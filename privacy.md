@@ -14,7 +14,7 @@ This version replaces the one effective 1 September 2026, and was announced in t
 
 **Your Avatar.** Optional. If you take one, it is a photo taken with Anvil's camera, checked on your phone like a Live photo, and shown to your circles beside your name. You can remove it at any time, and you are shown as your initials again.
 
-**A Run's numbers.** A Run is proved by its numbers rather than a photo: its distance and its duration, which make its pace. The points they are worked out from stay on your phone, where they draw your own map, and are deleted when you finish. Nothing about where the run went is sent, and nothing of its shape. A photo you put a Run's numbers on is a Live photo like any other.
+**A Run's numbers.** A Run is proved by its numbers rather than a photo: its distance and its duration, which make its pace. The points they are worked out from stay on your phone, where they draw your own map, and are deleted when you finish. Nothing about where the run went is sent, and nothing of its shape. While you run, your phone sends the distance and the time so far, about every half minute, so your circle can watch them in Live now; they are deleted when you finish. A photo you put a Run's numbers on is a Live photo like any other.
 
 **A Live Session.** A Live Session is proved by Live photos and their moments: a photo when it starts, one for a check around halfway, and one when it ends, and when each was. Anvil picks the check's moment when the session starts, and your phone asks for it with a notification it schedules itself, which is why a Live Session needs notifications on. At one of your places, your location is checked once, as it starts, to confirm you are inside the place, and is not kept. A session anywhere sends no location at all. "At home" is only words: Anvil keeps nothing about your home.
 
@@ -34,7 +34,7 @@ Anvil does not use advertising identifiers, does not track you across other apps
 
 ## Who sees it
 
-**Your circle sees your Live photos, your Avatar, your name, the names of the places you check in at, your promises, and whether you kept them.** That is the product. For a Run, it sees the distance, the time and the pace, never where it went. For a Live Session, it sees its photos, how long it ran, and whether it was proved.
+**Your circle sees your Live photos, your Avatar, your name, the names of the places you check in at, your promises, and whether you kept them.** That is the product. For a Run, it sees the distance, the time and the pace, while you run and after, never where it went. For a Live Session, it sees its photos, how long it ran, and whether it was proved, and while it is under way, that you are at it. Only a Live Session or a Run you start shows you in Live now; arriving somewhere never does.
 
 **Your circle never sees your location.** Not coordinates, not a map, not the place's position — only its name and your photo. Your circle is also never told what location permission you have granted.
 
@@ -68,8 +68,9 @@ Data is stored with Supabase, which hosts Anvil's database and photo storage. Se
 | Live photos, the still and the clip | While you are in a circle that saw them. Deleted when you remove one, leave every circle that saw it, a Report on it is upheld, or you delete your account |
 | An arrival you did not prove with a photo | Shown for three days; deleted a week after its week ends |
 | Your circles: who is in them, their invite codes and who joined through them, their streaks, and requests to leave or remove someone | While the circle exists. Deleting your account takes you out of every circle and your name off what stays |
-| Nudges and Check back in requests, their answers and notes | Kept as your circle's history. Deleting your account takes your name off them and erases your notes |
+| Nudges, Questions and Check back in requests, their answers and notes | Kept as your circle's history. Deleting your account takes your name off them and erases your notes |
 | Late notes you send | Shown to your circle the day you send one. Kept while your account exists; deleting your account erases them |
+| A Run's distance and time so far, while it runs | Shown to your circle in Live now. Deleted when you finish, or replaced by your next run; deleting your account erases them |
 | Your phone's notification token, the notifications decided for you, your mute switches, your Notifications switches and quiet hours, and whether Anvil can see your location at all | While your account exists. A token moves to whoever signs in next on that phone. A record that a Heads-up went is deleted after two days |
 | Blocks | Until you unblock, or either of you deletes your account |
 | Reports you make, the decision on each, and the notice a removal leaves you | While your account exists |
