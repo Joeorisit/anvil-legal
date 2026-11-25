@@ -26,7 +26,7 @@ This version replaces the one effective 1 September 2026, and was announced in t
 
 **Age signals.** On iOS 26 and later, Anvil asks Apple whether you are under 13, 16 or 18. Whatever Apple shares is used only to apply Anvil's age rules, on your phone, and is not kept or sent anywhere.
 
-**Your calendar stays on your phone.** With Anvil+, and only if you allow it, Anvil reads the calendars on your iPhone to show your events on your own Routine and find your free time. iOS calls this full access; Anvil changes nothing in your calendar. Anvil reads your calendar on your phone and sends none of it anywhere: no event, no title and no busy time is stored or sent, and your circle sees none of it.
+**Your calendar stays on your phone.** With Anvil+, and only if you allow it, Anvil reads the calendars on your iPhone to show your events on your own Routine and find your free time. iOS calls this full access; Anvil changes nothing in your calendar. Anvil reads your calendar on your phone and sends none of it anywhere: no event, no title and no busy time is stored or sent. A Late note sends only the words you choose to send. When something on your calendar runs into a promise's usual time, Anvil offers you words built on your phone from when it ends, never its name; you can change them, and the circles that promise is in see the Late note you send that day.
 
 **Diagnostics.** Crash and performance data via Sentry, to find bugs. This is never used to decide anything about you, your check-ins, or what you or your circle are shown.
 
@@ -69,7 +69,8 @@ Data is stored with Supabase, which hosts Anvil's database and photo storage. Se
 | An arrival you did not prove with a photo | Shown for three days; deleted a week after its week ends |
 | Your circles: who is in them, their invite codes and who joined through them, their streaks, and requests to leave or remove someone | While the circle exists. Deleting your account takes you out of every circle and your name off what stays |
 | Nudges and Check back in requests, their answers and notes | Kept as your circle's history. Deleting your account takes your name off them and erases your notes |
-| Your phone's notification token, the notifications decided for you, your mute switches and Heads-up switch, and whether Anvil can see your location at all | While your account exists. A token moves to whoever signs in next on that phone. A record that a Heads-up went is deleted after two days |
+| Late notes you send | Shown to your circle the day you send one. Kept while your account exists; deleting your account erases them |
+| Your phone's notification token, the notifications decided for you, your mute switches, your Notifications switches and quiet hours, and whether Anvil can see your location at all | While your account exists. A token moves to whoever signs in next on that phone. A record that a Heads-up went is deleted after two days |
 | Blocks | Until you unblock, or either of you deletes your account |
 | Reports you make, the decision on each, and the notice a removal leaves you | While your account exists |
 | The record of each moderation decision | Kept as Anvil's record of what it decided. One about an account Ended for age names nobody |
